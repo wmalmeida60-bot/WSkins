@@ -9,8 +9,17 @@
   <meta content='width=device-width, initial-scale=1' name='viewport'/>
   <title><data:blog.pageTitle/></title>
 
+  <!-- SEO BASE -->
+  <meta expr:content='data:blog.metaDescription' name='description'/>
+  <meta name='robots' content='index, follow'/>
+
+  <!-- Open Graph -->
+  <meta expr:content='data:blog.title' property='og:site_name'/>
+  <meta expr:content='data:blog.pageTitle' property='og:title'/>
+  <meta expr:content='data:blog.url' property='og:url'/>
+
   <b:skin><![CDATA[
-/* WSkins v0.2 */
+/* WSkins v0.3 */
 body{margin:0;font-family:Arial,sans-serif;background:#f4f4f4;color:#333;line-height:1.6;}
 a{color:#2196f3;text-decoration:none;}
 a:hover{text-decoration:underline;}
@@ -20,6 +29,9 @@ header{background:#fff;border-bottom:1px solid #e0e0e0;}
 nav ul{list-style:none;display:flex;gap:15px;padding:0;margin:0 0 15px 0;}
 nav a{font-size:14px;color:#555;}
 nav a:hover{color:#2196f3;}
+/* Monetização base */
+.post-body img{max-width:100%;height:auto;}
+.ads-placeholder{margin:20px 0;text-align:center;}
 ]]></b:skin>
 </head>
 <body>
