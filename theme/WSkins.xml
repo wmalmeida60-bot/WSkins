@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'
+      xmlns:b='http://www.google.com/2005/gml/b'
+      xmlns:data='http://www.google.com/2005/gml/data'
+      xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+  <meta charset='utf-8'/>
+  <meta content='width=device-width, initial-scale=1' name='viewport'/>
+  <title><data:blog.pageTitle/></title>
+
+  <b:skin><![CDATA[
+/* WSkins v0.1 base (reset) */
+body{margin:0;font-family:Arial,sans-serif;background:#f4f4f4;color:#333;}
+a{color:#2196f3;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.container{max-width:1100px;margin:0 auto;padding:20px;}
+]]></b:skin>
+</head>
+<body>
+  <div class='container'>
+    <b:section id='main' class='main' showaddelement='yes'>
+      <b:widget id='Blog1' type='Blog' locked='false'/>
+    </b:section>
+  </div>
+</body>
+</html>
