@@ -10,18 +10,37 @@
   <title><data:blog.pageTitle/></title>
 
   <b:skin><![CDATA[
-/* WSkins v0.1 base (reset) */
-body{margin:0;font-family:Arial,sans-serif;background:#f4f4f4;color:#333;}
+/* WSkins v0.2 */
+body{margin:0;font-family:Arial,sans-serif;background:#f4f4f4;color:#333;line-height:1.6;}
 a{color:#2196f3;text-decoration:none;}
 a:hover{text-decoration:underline;}
-.container{max-width:1100px;margin:0 auto;padding:20px;}
+.container{max-width:1100px;margin:0 auto;padding:0 20px;}
+header{background:#fff;border-bottom:1px solid #e0e0e0;}
+.blog-title{font-size:26px;font-weight:bold;padding:20px 0;}
+nav ul{list-style:none;display:flex;gap:15px;padding:0;margin:0 0 15px 0;}
+nav a{font-size:14px;color:#555;}
+nav a:hover{color:#2196f3;}
 ]]></b:skin>
 </head>
 <body>
+
+<header>
   <div class='container'>
-    <b:section id='main' class='main' showaddelement='yes'>
-      <b:widget id='Blog1' type='Blog' locked='false'/>
+    <div class='blog-title'>
+      <a expr:href='data:blog.homepageUrl'><data:blog.title/></a>
+    </div>
+
+    <b:section id='nav' class='nav' showaddelement='yes'>
+      <b:widget id='PageList1' type='PageList' locked='false'/>
     </b:section>
   </div>
+</header>
+
+<div class='container'>
+  <b:section id='main' class='main' showaddelement='yes'>
+    <b:widget id='Blog1' type='Blog' locked='false'/>
+  </b:section>
+</div>
+
 </body>
 </html>
